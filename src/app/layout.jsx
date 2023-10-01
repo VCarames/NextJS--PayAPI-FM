@@ -1,6 +1,4 @@
 import { DM_Serif_Display, Public_Sans } from "next/font/google";
-import Footer from "@/components/footer/Footer";
-import Header from "@/components/header/Header";
 import "/dist/css/main.css";
 
 export const dm_serif_display = DM_Serif_Display({
@@ -29,9 +27,7 @@ export default function RootLayout({ children }) {
       className={`${dm_serif_display.variable} ${public_sans.variable}`}
     >
       <body>
-        <Header />
         <main>{children}</main>
-        <Footer />
       </body>
     </html>
   );

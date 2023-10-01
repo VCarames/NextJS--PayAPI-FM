@@ -1,3 +1,212 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
 
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --mw-700: 43.75rem;
+  --mw-1000: 62.5rem;
+  --mw-1110: 69.38rem;
+  --fs-15: 0.94rem;
+  --fs-16: 1rem;
+  --fs-18: 1.13rem;
+  --fs-20: 1.25rem;
+  --fs-24: 1.5rem;
+  --fs-32: 2rem;
+  --fs-36: 2.25rem;
+  --fs-48: 3rem;
+  --fs-53: 3.31rem;
+  --fs-56: 3.5rem;
+  --fs-72: 4.5rem;
+  --fw-400: 400;
+  --fw-700: 700;
+  --primary-clr-one: hsl(337, 48%, 49%);
+  --primary-clr-two: hsl(220, 60%, 99%);
+  --secondary-clr-one: hsl(207, 33%, 32%);
+  --secondary-clr-two: hsl(207, 27%, 15%);
+  --secondary-clr-three: hsl(337, 60%, 64%);
+  --secondary-clr-four: hsl(207, 16%, 50%);
+  --box-shadow-nav: hsla(207, 33%, 32%, 0.25);
+  --box-shadow-illustration: hsla(207, 33%, 32%, 0.25);
+  --border-top-clr: hsl(207, 58%, 99%, 0.15);
+  --transition: 0.8s all;
+}
+
+.primary__link {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-20);
+  font-weight: var(--fw-700);
+}
+
+.secondary__link {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-15);
+  font-weight: var(--fw-700);
+}
+
+.primary__heading {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-32);
+  font-weight: var(--fw-400);
+  line-height: 1.12;
+  letter-spacing: -0.02rem;
+}
+
+.primary__heading--alt {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-32);
+  font-weight: var(--fw-400);
+  line-height: 1.12;
+  letter-spacing: -0.02rem;
+}
+
+.secondary__heading {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-32);
+  font-weight: var(--fw-400);
+  line-height: 1.12;
+  letter-spacing: -0.02rem;
+}
+
+.tertiary__heading {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-36);
+  font-weight: var(--fw-400);
+  line-height: 1;
+  letter-spacing: -0.02rem;
+}
+
+.primary__subheading {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-18);
+  font-weight: var(--fw-700);
+  line-height: 1.38;
+  letter-spacing: -0.01rem;
+}
+
+.secondary__subheading {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-24);
+  font-weight: var(--fw-400);
+  line-height: 1.33;
+  letter-spacing: -0.01rem;
+}
+
+@media (min-width: 700px) {
+  .primary__link {
+    font-size: var(--fs-15);
+  }
+  .primary__heading {
+    font-size: var(--fs-48);
+    line-height: 1.16;
+  }
+  .primary__heading--alt {
+    font-size: var(--fs-48);
+    line-height: 1.16;
+  }
+  .secondary__heading {
+    font-size: var(--fs-48);
+    line-height: 1.16;
+  }
+}
+@media (min-width: 1000px) {
+  .primary__heading {
+    font-size: var(--fs-72);
+    line-height: 1;
+    letter-spacing: -0.03rem;
+  }
+  .primary__heading--alt {
+    font-size: var(--fs-56);
+    line-height: 1;
+    letter-spacing: -0.03rem;
+  }
+  .secondary__subheading {
+    font-size: var(--fs-32);
+    line-height: 1.25;
+    letter-spacing: -0.02rem;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
