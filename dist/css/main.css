@@ -174,6 +174,20 @@ button {
   letter-spacing: -0.01rem;
 }
 
+.primary__text {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-15);
+  font-weight: var(--fw-400);
+  line-height: 1.86;
+}
+
+.secondary__text {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-16);
+  font-weight: var(--fw-400);
+  line-height: 1.75;
+}
+
 ::placeholder {
   color: var(--secondary-clr-one);
   opacity: 0.5;
