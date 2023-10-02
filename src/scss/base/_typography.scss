@@ -58,6 +58,14 @@
   letter-spacing: -0.01rem;
 }
 
+::placeholder {
+  color: var(--secondary-clr-one);
+  opacity: 0.5;
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-15);
+  font-weight: var(--fw-700);
+}
+
 @media (min-width: 700px) {
   .primary__link {
     font-size: var(--fs-15);

@@ -1,0 +1,74 @@
+.cta-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.06rem;
+
+  &__email {
+    padding: 0.75rem 0.06rem 0.63rem 1.69rem;
+    border-radius: 1.5rem;
+
+    background: var(--primary-clr-two);
+    box-shadow: 0.63rem 0.63rem 1.56rem -0.63rem var(--boxshadow-clr-one);
+  }
+
+  &__button {
+    padding: 0.94rem 1.56rem 0.63rem 1.63rem;
+  }
+
+  &__text {
+    color: var(--secondary-clr-four);
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-15);
+    font-weight: var(--fw-400);
+
+    margin-top: 0.5rem;
+
+    &-link {
+      font-weight: 700;
+    }
+  }
+}
+
+@media (min-width: 43.75rem) {
+  .cta-form {
+    position: relative;
+
+    width: 100%;
+    max-width: 27.75rem;
+
+    display: flex;
+    gap: 1.25rem;
+
+    margin: 0 auto;
+
+    &__email {
+      width: 100%;
+
+      padding: 0.75rem 0.06rem 0.69rem 1.63rem;
+    }
+
+    &__button {
+      position: absolute;
+      right: 0%;
+      top: -1%;
+
+      padding: 0.81rem 1.44rem 0.69rem 1.63rem;
+    }
+
+    &__text {
+      margin-top: -0.31rem;
+    }
+  }
+}
+
+@media (min-width: 62.5rem) {
+  .cta-form {
+    margin: inherit;
+
+    &__text {
+      margin-left: 1.75rem;
+      transform: translateX(1.69rem);
+    }
+  }
+}
