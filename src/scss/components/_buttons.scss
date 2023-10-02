@@ -1,0 +1,49 @@
+.button {
+  min-width: 10ch;
+  min-height: 2.75rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-15);
+  font-weight: var(--fw-700);
+  letter-spacing: -0.01rem;
+
+  border-radius: 1.5rem;
+
+  &--primary,
+  &--secondary,
+  &--tertiary {
+    transition: var(--transition);
+  }
+
+  &--primary {
+    color: var(--primary-clr-two);
+    background: var(--primary-clr-one);
+
+    &:hover {
+      background: #da6d97;
+    }
+  }
+
+  &--secondary {
+    color: var(--secondary-clr-one);
+    border: solid 0.06rem var(--secondary-clr-one);
+
+    &:hover {
+      background: var(--secondary-clr-one);
+    }
+  }
+
+  &--tertiary {
+    color: var(--primary-clr-two);
+    border: solid 0.06rem var(--primary-clr-two);
+
+    &:hover {
+      background: var(--primary-clr-two);
+    }
+  }
+}

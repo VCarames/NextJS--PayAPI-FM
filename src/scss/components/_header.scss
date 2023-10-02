@@ -1,0 +1,36 @@
+.header {
+  padding: 2.5rem 1.56rem 0.44rem 1.56rem;
+
+  &__content {
+    max-width: var(--mw-1110);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 auto;
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 9rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .header {
+    padding: 2.56rem 2.44rem 0.88rem 2.44rem;
+
+    &__content {
+      flex-direction: row;
+      justify-content: normal;
+      gap: 3.44rem;
+    }
+  }
+}
+
+@media (min-width: 62.5rem) {
+  .header {
+    padding: 2.5rem 2.44rem 1rem 2.44rem;
+  }
+}
