@@ -1,0 +1,110 @@
+.clients-section {
+  background: var(--secondary-clr-two);
+
+  padding: 5.25rem 1.25rem 5rem 1.25rem;
+  margin-top: 4.63rem;
+
+  &__content {
+    max-width: var(--mw-1110);
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 3.5rem;
+
+    margin: 0 auto;
+  }
+
+  &__heading {
+    color: var(--primary-clr-two);
+
+    margin-bottom: 0.94rem;
+  }
+
+  &__text {
+    color: var(--secondary-clr-four);
+    opacity: 0.7;
+
+    margin-bottom: 3.69rem;
+  }
+
+  &__container {
+    display: grid;
+    justify-items: center;
+
+    text-align: center;
+  }
+
+  &__button {
+    padding: 0.88rem 1.94rem 0.63rem 1.94rem;
+  }
+}
+
+@media (min-width: 43.75rem) {
+  .clients-section {
+    padding: 5.94rem 2.5rem 5.5rem 2.5rem;
+    margin-top: 5.88rem;
+
+    &__content {
+      align-items: center;
+      gap: 4.25rem;
+    }
+
+    &__heading {
+      margin-bottom: 1.44rem;
+    }
+
+    &__text {
+      max-width: 50ch;
+      margin-bottom: 2rem;
+    }
+
+    &__container {
+      display: grid;
+      justify-items: center;
+    }
+
+    &__btn {
+      padding: 0.81rem 2rem 0.62rem 1.94rem;
+    }
+  }
+}
+
+@media (min-width: 62.5rem) {
+  .clients-section {
+    padding: 6.5rem 2.5rem 6.25rem 2.5rem;
+    margin-top: 74px;
+
+    &__content {
+      max-width: var(--mw-1110);
+      display: grid;
+
+      align-items: center;
+      gap: 2.13rem;
+
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "content logos";
+    }
+
+    &__container {
+      grid-area: content;
+      text-align: start;
+
+      justify-items: start;
+      justify-self: start;
+    }
+
+    &__heading {
+      font-size: var(--fs-48);
+      margin-bottom: 1.81rem;
+    }
+
+    &__text {
+      margin-bottom: 2.13rem;
+    }
+
+    &__btn {
+      padding: 0.81rem 2.06rem 0.56rem 1.81rem;
+    }
+  }
+}

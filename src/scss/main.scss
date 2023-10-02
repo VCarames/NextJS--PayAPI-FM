@@ -6,5 +6,7 @@
 @use "components/header";
 @use "components/nav";
 @use "components/cta";
+@use "components/companies";
 
-@use "sections/hero";
+@use "sections/home/hero";
+@use "sections/home/clients";

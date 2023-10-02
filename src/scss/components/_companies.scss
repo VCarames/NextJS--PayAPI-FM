@@ -1,0 +1,14 @@
+.companies__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.88rem;
+}
+
+@media (min-width: 43.75rem) {
+  .companies__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3.81rem;
+    justify-items: center;
+  }
+}
