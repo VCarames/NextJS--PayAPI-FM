@@ -650,106 +650,106 @@ button {
     padding: 0.81rem 2.06rem 0.56rem 1.81rem;
   }
 }
-.features-section {
+.benefits-section {
   margin-top: 5rem;
   padding: 0 1.38rem 0 1.44rem;
 }
-.features-section__content {
+.benefits-section__content {
   max-width: var(--mw-1110);
   display: grid;
   gap: 5.06rem;
   margin: 0 auto;
 }
-.features-section__content--one, .features-section__content--two {
+.benefits-section__content--one, .benefits-section__content--two {
   display: grid;
   justify-items: center;
   grid-template-areas: "illustration" "content";
   gap: 3.06rem;
 }
-.features-section__illustration {
+.benefits-section__illustration {
   width: 100%;
   height: auto;
 }
-.features-section__illustration--one {
+.benefits-section__illustration--one {
   grid-area: illustration;
 }
-.features-section__container--illustrations {
+.benefits-section__container--illustrations {
   grid-area: illustration;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.63rem;
 }
-.features-section__illustration--one {
+.benefits-section__illustration--one {
   max-width: 27.75rem;
   box-shadow: 1.56rem 1.56rem 5rem 0 var(--boxshadow-clr-two);
 }
-.features-section__illustration--two {
+.benefits-section__illustration--two {
   max-width: 27.75rem;
   filter: drop-shadow(1.56rem 1.56rem 5rem 0 var(--boxshadow-clr-two));
 }
-.features-section__container {
+.benefits-section__container {
   display: grid;
   gap: 1.38rem;
   text-align: center;
 }
-.features-section__container--one {
+.benefits-section__container--one {
   grid-area: content;
 }
-.features-section__container--two {
+.benefits-section__container--two {
   grid-area: content;
 }
-.features-section__heading {
+.benefits-section__heading {
   color: var(--secondary-clr-one);
 }
-.features-section__text {
+.benefits-section__text {
   max-width: 66ch;
   color: var(--secondary-clr-four);
 }
 
 @media (min-width: 43.75rem) {
-  .features-section {
+  .benefits-section {
     margin-top: 100px;
   }
-  .features-section__content {
+  .benefits-section__content {
     gap: 6.19rem;
   }
-  .features-section__content--two {
+  .benefits-section__content--two {
     gap: 2.94rem;
   }
-  .features-section__illustration--one {
+  .benefits-section__illustration--one {
     max-width: 24.56rem;
   }
-  .features-section__container--illustrations {
+  .benefits-section__container--illustrations {
     width: 51%;
   }
-  .features-section__illustration--two {
+  .benefits-section__illustration--two {
     max-width: 27.75rem;
   }
-  .features-section__container {
+  .benefits-section__container {
     gap: 1.38rem;
   }
 }
 @media (min-width: 62.5rem) {
-  .features-section {
+  .benefits-section {
     margin-top: 9.19rem;
   }
-  .features-section__content {
+  .benefits-section__content {
     gap: 9.44rem;
   }
-  .features-section__content--one {
+  .benefits-section__content--one {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "illustration content";
     align-items: center;
     gap: 1.81rem;
   }
-  .features-section__content--two {
+  .benefits-section__content--two {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "content illustration";
     align-items: center;
     gap: 0;
   }
-  .features-section__container--illustrations {
+  .benefits-section__container--illustrations {
     justify-self: start;
     grid-area: illustration;
     width: 100%;
@@ -758,23 +758,23 @@ button {
     gap: 1.75rem;
     transform: translateX(-0.81rem);
   }
-  .features-section__container {
+  .benefits-section__container {
     text-align: start;
   }
-  .features-section__container--one {
+  .benefits-section__container--one {
     justify-self: start;
   }
-  .features-section__container--two {
+  .benefits-section__container--two {
     justify-self: start;
   }
-  .features-section__illustration--one {
+  .benefits-section__illustration--one {
     justify-self: start;
     max-width: 27.81rem;
   }
-  .features-section__illustration--two {
+  .benefits-section__illustration--two {
     max-width: 27.75rem;
   }
-  .features-section__text {
+  .benefits-section__text {
     max-width: 48ch;
   }
 }
