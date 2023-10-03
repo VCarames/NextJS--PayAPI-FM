@@ -1,4 +1,5 @@
 import Clients from "@/components/home/Clients";
+import Features from "@/components/home/Features";
 import Hero from "@/components/home/Hero";
 
 function Home() {
@@ -6,6 +7,7 @@ function Home() {
     <>
       <Hero />
       <Clients />
+      <Features />
     </>
   );
 }
