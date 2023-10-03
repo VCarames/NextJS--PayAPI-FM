@@ -1,5 +1,5 @@
 .plans-section {
-  padding: 0 1.5rem;
+  padding: 0 1.5rem 0.69rem 1.5rem;
   margin-top: 2.63rem;
 
   &__content {
@@ -22,7 +22,6 @@
 
   &__plan {
     display: grid;
-    // justify-content: center;
 
     text-align: center;
 
@@ -79,7 +78,7 @@
 
 @media (min-width: 43.75rem) {
   .plans-section {
-    padding: 0 2.5rem;
+    padding: 0 2.5rem 1.31rem 2.5rem;
     margin-top: 3.81rem;
 
     &__content {
@@ -140,7 +139,7 @@
 
 @media (min-width: 62.5rem) {
   .plans-section {
-    padding: 0 2.5rem;
+    padding: 0 2.5rem 0.75rem 2.5rem;
     margin-top: 4.19rem;
 
     &__content {
@@ -155,7 +154,7 @@
     &__container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 1.94rem;
+      gap: 31px;
     }
 
     &__plan {

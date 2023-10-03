@@ -526,7 +526,7 @@ button {
 }
 @media (min-width: 62.5rem) {
   .cta-section {
-    margin-top: 5.31rem;
+    margin-top: 85px;
   }
   .cta-section__content {
     text-align: start;
@@ -971,7 +971,7 @@ button {
   }
 }
 .plans-section {
-  padding: 0 1.5rem;
+  padding: 0 1.5rem 0.69rem 1.5rem;
   margin-top: 2.63rem;
 }
 .plans-section__content {
@@ -1032,7 +1032,7 @@ button {
 
 @media (min-width: 43.75rem) {
   .plans-section {
-    padding: 0 2.5rem;
+    padding: 0 2.5rem 1.31rem 2.5rem;
     margin-top: 3.81rem;
   }
   .plans-section__content {
@@ -1077,7 +1077,7 @@ button {
 }
 @media (min-width: 62.5rem) {
   .plans-section {
-    padding: 0 2.5rem;
+    padding: 0 2.5rem 0.75rem 2.5rem;
     margin-top: 4.19rem;
   }
   .plans-section__content {
@@ -1090,7 +1090,7 @@ button {
   .plans-section__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.94rem;
+    gap: 31px;
   }
   .plans-section__plan {
     text-align: start;
