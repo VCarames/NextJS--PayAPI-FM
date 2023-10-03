@@ -1,0 +1,164 @@
+.benefits-section {
+  margin-top: 5rem;
+  padding: 0 1.38rem 0 1.44rem;
+
+  &__content {
+    max-width: var(--mw-1110);
+    display: grid;
+    gap: 5.06rem;
+
+    margin: 0 auto;
+  }
+
+  &__content--one,
+  &__content--two {
+    display: grid;
+    justify-items: center;
+    grid-template-areas: "illustration" "content";
+    gap: 3.06rem;
+  }
+
+  &__illustration {
+    width: 100%;
+    height: auto;
+
+    &--one {
+      grid-area: illustration;
+    }
+  }
+
+  &__container--illustrations {
+    grid-area: illustration;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.63rem;
+  }
+
+  &__illustration--one {
+    max-width: 27.75rem;
+
+    box-shadow: 1.56rem 1.56rem 5rem 0 var(--boxshadow-clr-two);
+  }
+
+  &__illustration--two {
+    max-width: 27.75rem;
+
+    filter: drop-shadow(1.56rem 1.56rem 5rem 0 var(--boxshadow-clr-two));
+  }
+
+  &__container {
+    display: grid;
+    gap: 1.38rem;
+    text-align: center;
+
+    &--one {
+      grid-area: content;
+    }
+
+    &--two {
+      grid-area: content;
+    }
+  }
+
+  &__heading {
+    color: var(--secondary-clr-one);
+  }
+
+  &__text {
+    max-width: 66ch;
+
+    color: var(--secondary-clr-four);
+  }
+}
+
+@media (min-width: 43.75rem) {
+  .benefits-section {
+    margin-top: 100px;
+
+    &__content {
+      gap: 6.19rem;
+    }
+
+    &__content--two {
+      gap: 2.94rem;
+    }
+
+    &__illustration--one {
+      max-width: 24.56rem;
+    }
+
+    &__container--illustrations {
+      width: 51%;
+    }
+
+    &__illustration--two {
+      max-width: 27.75rem;
+    }
+
+    &__container {
+      gap: 1.38rem;
+    }
+  }
+}
+
+@media (min-width: 62.5rem) {
+  .benefits-section {
+    margin-top: 9.19rem;
+
+    &__content {
+      gap: 9.44rem;
+    }
+
+    &__content--one {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "illustration content";
+      align-items: center;
+
+      gap: 1.81rem;
+    }
+
+    &__content--two {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "content illustration";
+      align-items: center;
+
+      gap: 0;
+    }
+
+    &__container--illustrations {
+      justify-self: start;
+      grid-area: illustration;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.75rem;
+      transform: translateX(-0.81rem);
+    }
+
+    &__container {
+      text-align: start;
+
+      &--one {
+        justify-self: start;
+      }
+
+      &--two {
+        justify-self: start;
+      }
+    }
+
+    &__illustration--one {
+      justify-self: start;
+      max-width: 27.81rem;
+    }
+
+    &__illustration--two {
+      max-width: 27.75rem;
+    }
+
+    &__text {
+      max-width: 48ch;
+    }
+  }
+}

@@ -24,7 +24,7 @@ function Features() {
                 <h3 className="features-section__list-heading primary__subheading">
                   {feature.heading}
                 </h3>
-                <p className="features-section__list-text secondary__text">
+                <p className="features-section__list-text primary__text">
                   {feature.text}
                 </p>
               </div>
