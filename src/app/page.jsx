@@ -2,6 +2,7 @@ import Clients from "@/components/home/Clients";
 import Benefits from "@/components/home/Benefits";
 import Hero from "@/components/home/Hero";
 import Features from "@/components/home/Features";
+import CTASection from "@/components/CTASection";
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
       <Clients />
       <Benefits />
       <Features />
+      <CTASection />
     </>
   );
 }
