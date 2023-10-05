@@ -1,0 +1,148 @@
+.values-section {
+  margin-top: 42px;
+
+  &__content {
+    // max-width: var(--mw-1110);
+
+    display: grid;
+    justify-content: center;
+
+    // margin: 0 auto;
+  }
+
+  &__heading {
+    max-width: 21ch;
+
+    color: var(--secondary-clr-one);
+    text-align: center;
+    margin: 0 24px 0 24px;
+  }
+
+  &__container {
+    max-width: var(--mw-1110);
+
+    margin: 0 auto;
+  }
+
+  &__value {
+    display: grid;
+    gap: 16px;
+
+    text-align: center;
+
+    padding: 0 24px;
+
+    margin-top: 48px;
+
+    &-heading {
+      text-align: center;
+      color: hsla(207, 33%, 32%, 1);
+    }
+
+    &-text {
+      color: hsla(207, 16%, 50%, 1);
+    }
+  }
+
+  &__picture {
+    margin-top: 76px;
+  }
+}
+
+@media (min-width: 700px) {
+  .values-section {
+    margin-top: 61px;
+
+    &__content {
+      display: grid;
+      justify-content: center;
+    }
+    &__heading {
+      max-width: 23ch;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    &__value {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 5px;
+
+      text-align: center;
+
+      padding: 0 40px 0 39px;
+
+      margin-top: 64px;
+
+      &-heading {
+        text-align: start;
+        color: hsla(207, 33%, 32%, 1);
+
+        font-size: 32px;
+
+        line-height: 40px; /* 125% */
+        letter-spacing: -0.246px;
+      }
+
+      &-text {
+        text-align: start;
+        color: hsla(207, 16%, 50%, 1);
+      }
+    }
+
+    &__picture {
+      margin-top: 92px;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .values-section {
+    margin-top: 67px;
+
+    &__content {
+      display: grid;
+      justify-content: center;
+    }
+    &__heading {
+      max-width: 26ch;
+      text-align: start;
+
+      padding: 0 40px;
+      margin: initial;
+    }
+
+    &__value {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 5px;
+
+      text-align: center;
+
+      padding: 0 40px 0 39px;
+
+      margin-top: 70px;
+
+      &-heading {
+        text-align: start;
+        color: hsla(207, 33%, 32%, 1);
+
+        font-size: 32px;
+
+        line-height: 40px; /* 125% */
+        letter-spacing: -0.246px;
+      }
+
+      &-text {
+        max-width: 66ch;
+
+        text-align: start;
+        color: hsla(207, 16%, 50%, 1);
+      }
+    }
+
+    &__picture {
+      margin-top: 87px;
+    }
+  }
+}
