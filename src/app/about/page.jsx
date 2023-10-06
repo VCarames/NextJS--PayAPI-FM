@@ -1,3 +1,4 @@
+import CTASection from "@/components/CTASection";
 import Stats from "@/components/about/Stats";
 import Value from "@/components/about/Value";
 
@@ -63,6 +64,7 @@ function About() {
           </div>
         </div>
       </section>
+      <CTASection />
     </>
   );
 }
