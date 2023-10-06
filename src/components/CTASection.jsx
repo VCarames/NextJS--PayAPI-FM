@@ -9,10 +9,10 @@ function CTASection() {
         </h2>
 
         <CTA
-          formClassName="cta-form cta-form--section"
-          inputClassName="cta-form__email cta-form__email--section"
+          formClassName="cta-form"
+          inputClassName="cta-form__email"
           labelClassName="cta-form__email-label visually-hidden"
-          buttonClassName="cta-form__button cta-form__button--section button button--primary"
+          buttonClassName="cta-form__button button button--primary"
           spanClassName=""
         />
       </div>
