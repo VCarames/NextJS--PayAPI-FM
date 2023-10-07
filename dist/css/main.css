@@ -110,6 +110,7 @@ button {
   --secondary-clr-four: hsl(207, 16%, 50%);
   --border-clr-one: hsl(207, 58%, 99%, 0.15);
   --border-clr-two: hsla(207, 33%, 32%, 0.25);
+  --border-clr-three: hsla(207, 33%, 32%, 0.5);
   --boxshadow-clr-one: hsla(207, 33%, 32%, 0.25);
   --boxshadow-clr-two: hsla(207, 33%, 32%, 0.3);
   --transition: 0.8s all;
@@ -1289,6 +1290,177 @@ button {
   }
   .stats-section__list-item {
     padding: 1.06rem 0 0.94rem 0;
+  }
+}
+.contact-section {
+  padding: 0 1.5rem;
+  margin-top: 2.63rem;
+}
+.contact-section__content {
+  max-width: var(--mw-1110);
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  grid-template-areas: "heading" "form ";
+}
+.contact-section__heading {
+  grid-area: heading;
+  color: var(--secondary-clr-one);
+  text-align: center;
+}
+.contact-section__container {
+  grid-area: form;
+  display: grid;
+  justify-content: center;
+}
+
+@media (min-width: 43.75rem) {
+  .contact-section {
+    margin-top: 3.75rem;
+  }
+  .contact-section__content {
+    max-width: var(--mw-1110);
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+  }
+  .contact-section__heading {
+    max-width: 20ch;
+    justify-self: center;
+  }
+}
+@media (min-width: 62.5rem) {
+  .contact-section {
+    margin-top: 4.19rem;
+  }
+  .contact-section__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "heading heading" "form form";
+    align-items: center;
+  }
+  .contact-section__heading {
+    max-width: 24ch;
+    text-align: start;
+    justify-self: start;
+  }
+  .contact-section__container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.88rem;
+    align-items: center;
+  }
+}
+.contact-section__form {
+  max-width: 27.81rem;
+  display: grid;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2.94rem auto 0 auto;
+}
+.contact-section__form--name, .contact-section__form--email, .contact-section__form--company, .contact-section__form--title {
+  border-bottom: solid 0.06rem var(--border-clr-three);
+  padding: 0 0 1.06rem 1.25rem;
+}
+.contact-section__form--message {
+  border-bottom: solid 0.06rem var(--border-clr-three);
+  padding: 0 0 4rem 1.25rem;
+}
+.contact-section__form-container {
+  display: flex;
+  align-items: center;
+  gap: 1.63rem;
+}
+.contact-section__form input[type=checkbox] {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: grid;
+  place-content: center;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--boxshadow-clr-one);
+  border-radius: 0.15rem;
+  transform: translateY(-0.075rem);
+  margin: 0;
+}
+.contact-section__form input[type=checkbox]::before {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.15rem;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1.5rem 1.5rem var(--primary-clr-one);
+}
+.contact-section__form input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+.contact-section__form--consent {
+  color: var(--secondary-clr-one);
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-15);
+  font-weight: var(--fw-400);
+  line-height: 1.66;
+  letter-spacing: -0.01rem;
+}
+.contact-section__form-button {
+  justify-self: start;
+  padding: 0.94rem 3rem 0.63rem 3.13rem;
+}
+
+@media (min-width: 43.75rem) {
+  .contact-section__form {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 4rem;
+  }
+  .contact-section__form-container {
+    display: flex;
+    align-items: center;
+    gap: 1.63rem;
+  }
+}
+@media (min-width: 1000px) {
+  .contact-section__form {
+    display: grid;
+    gap: 1.5rem;
+    margin: 4rem 0 0 0;
+  }
+}
+.join__content {
+  display: grid;
+  gap: 1.88rem;
+  text-align: center;
+  margin-top: 4.94rem;
+}
+
+.join__heading {
+  max-width: 40ch;
+  color: var(--secondary-clr-one);
+  opacity: 0.75;
+  justify-self: center;
+}
+
+@media (min-width: 43.75rem) {
+  .join__content {
+    gap: 2.5rem;
+    margin-top: 3.94rem;
+  }
+}
+@media (min-width: 62.5rem) {
+  .join__content {
+    gap: 2.5rem;
+    text-align: start;
+    margin-top: 0;
+  }
+  .join__heading {
+    max-width: 40ch;
+    font-size: var(--fs-24);
+    font-weight: var(--fw-400);
+    line-height: 1.33;
+    letter-spacing: -0.01rem;
+    justify-self: start;
   }
 }
 
