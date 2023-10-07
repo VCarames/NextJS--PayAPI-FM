@@ -31,9 +31,11 @@
 
   &--secondary {
     color: var(--secondary-clr-one);
+    background: none;
     border: solid 0.06rem var(--secondary-clr-one);
 
     &:hover {
+      color: var(--primary-clr-two);
       background: var(--secondary-clr-one);
     }
   }
@@ -43,6 +45,7 @@
     border: solid 0.06rem var(--primary-clr-two);
 
     &:hover {
+      color: var(--secondary-clr-on);
       background: var(--primary-clr-two);
     }
   }

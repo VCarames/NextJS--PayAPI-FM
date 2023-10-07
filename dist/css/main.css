@@ -104,6 +104,7 @@ button {
   --fw-700: 700;
   --primary-clr-one: hsl(337, 48%, 49%);
   --primary-clr-two: hsl(220, 60%, 99%);
+  --primary-clr-three: hsl(207, 44%, 95%);
   --secondary-clr-one: hsl(207, 33%, 32%);
   --secondary-clr-two: hsl(207, 27%, 15%);
   --secondary-clr-three: hsl(337, 60%, 64%);
@@ -236,6 +237,10 @@ button {
     letter-spacing: -0.02rem;
   }
 }
+body {
+  background: var(--primary-clr-three);
+}
+
 .button {
   min-width: 10ch;
   min-height: 2.75rem;
@@ -261,9 +266,11 @@ button {
 }
 .button--secondary {
   color: var(--secondary-clr-one);
+  background: none;
   border: solid 0.06rem var(--secondary-clr-one);
 }
 .button--secondary:hover {
+  color: var(--primary-clr-two);
   background: var(--secondary-clr-one);
 }
 .button--tertiary {
@@ -271,6 +278,7 @@ button {
   border: solid 0.06rem var(--primary-clr-two);
 }
 .button--tertiary:hover {
+  color: var(--secondary-clr-on);
   background: var(--primary-clr-two);
 }
 
