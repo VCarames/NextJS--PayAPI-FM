@@ -5,7 +5,7 @@ function Clients() {
   return (
     <section className="clients-section">
       <div className="clients-section__content">
-        <Companies />
+        <Companies color="white" />
         <div className="clients-section__container">
           <h2 className="clients-section__heading primary__heading">
             Who we work with

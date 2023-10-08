@@ -1,32 +1,37 @@
 import Image from "next/image";
-import Tesla from "/public/assets/logos/tesla.svg";
-import Microsoft from "/public/assets/logos/microsoft.svg";
-import HP from "/public/assets/logos/hewlett-packard.svg";
-import Oracle from "/public/assets/logos/oracle.svg";
-import Google from "/public/assets/logos/google.svg";
-import Nvidia from "/public/assets/logos/nvidia.svg";
 
-function Companies() {
+function Companies({ color }) {
+  const getImageSource = (companyName) => {
+    return `./assets/logos/${companyName}--${color}.svg`;
+  };
+
+  const companies = [
+    { name: "tesla", alt: "Tesla", width: "129", height: "17" },
+    { name: "microsoft", alt: "Microsoft", width: "145", height: "31" },
+    {
+      name: "hewlett-packard",
+      alt: "Hewlett-Packard",
+      width: "140",
+      height: "27",
+    },
+    { name: "oracle", alt: "Oracle", width: "131", height: "17" },
+    { name: "google", alt: "Google", width: "96", height: "33" },
+    { name: "nvidia", alt: "Nvidia", width: "137", height: "26" },
+  ];
+
   return (
     <ul className="companies__list" role="list">
-      <li className="companies__item" role="listitem">
-        <Image className="companies__logo" src={Tesla} alt="Tesla" />
-      </li>
-      <li className="companies__item" role="listitem">
-        <Image className="companies__logo" src={Microsoft} alt="Microsoft" />
-      </li>
-      <li className="companies__item" role="listitem">
-        <Image className="companies__logo" src={HP} alt="Hewlett-Packard" />
-      </li>
-      <li className="companies__item" role="listitem">
-        <Image className="companies__logo" src={Oracle} alt="Oracle" />
-      </li>
-      <li className="companies__item" role="listitem">
-        <Image className="companies__logo" src={Google} alt="Google" />
-      </li>
-      <li className="companies__item" role="listitem">
-        <Image className="companies__logo" src={Nvidia} alt="Nvidia" />
-      </li>
+      {companies.map((company) => (
+        <li className="companies__item" role="listitem" key={company.name}>
+          <Image
+            className="companies__logo"
+            src={getImageSource(company.name)}
+            alt={company.alt}
+            width={company.width}
+            height={company.height}
+          />
+        </li>
+      ))}
     </ul>
   );
 }

@@ -6,7 +6,7 @@ function Join() {
       <h3 className="join__heading secondary__subheading">
         Join the thousands of innovators already building with us
       </h3>
-      <Companies />
+      <Companies color="dark" />
     </div>
   );
 }
