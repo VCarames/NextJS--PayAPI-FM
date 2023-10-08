@@ -9,11 +9,11 @@
 
   & .nav__toggle-line {
     display: block;
-    width: 2.5rem;
-    height: 0.31rem;
+    width: 1.75rem;
+    height: 0.25rem;
 
     background: var(--primary-clr-one);
-    margin-block: 0.31rem;
+    margin-block: 0.19rem;
     border-radius: 0.13rem;
 
     transition:
@@ -22,11 +22,11 @@
   }
 
   &[aria-expanded="true"] .nav__toggle-line:nth-child(1) {
-    transform: translateY(0.63rem);
+    transform: translateY(0.38rem);
   }
 
   &[aria-expanded="true"] .nav__toggle-line:nth-child(3) {
-    transform: translateY(-0.63rem);
+    transform: translateY(-0.38rem);
   }
 }
 
@@ -82,6 +82,7 @@
 
   @media (hover: hover) {
     &-link:is(:hover, :focus, :focus-visible) {
+      color: var(--primary-clr-one);
       opacity: 1;
       transition: var(--transition);
     }

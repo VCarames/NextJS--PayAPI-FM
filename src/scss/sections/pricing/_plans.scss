@@ -28,7 +28,7 @@
     &-heading {
       color: var(--primary-clr-one);
 
-      margin-bottom: 83px;
+      margin-bottom: 5.19rem;
     }
 
     &-text {
@@ -54,7 +54,7 @@
       border-top: solid 0.06rem var(--border-clr-two);
       border-bottom: solid 0.06rem var(--border-clr-two);
 
-      padding: 26px 0 22px 0;
+      padding: 1.63rem 0 1.38rem 0;
       margin-bottom: 1.56rem;
 
       &-feature {
@@ -103,7 +103,7 @@
 
         color: var(--secondary-clr-four);
 
-        margin-bottom: 19px;
+        margin-bottom: 1.19rem;
       }
 
       &-price {
@@ -111,7 +111,7 @@
         line-height: 1.5;
         letter-spacing: -0.02rem;
 
-        margin-bottom: 22px;
+        margin-bottom: 1.38rem;
       }
 
       &-list {
@@ -154,7 +154,7 @@
     &__container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 31px;
+      gap: 1.94rem;
     }
 
     &__plan {

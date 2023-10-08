@@ -11,13 +11,19 @@
   &--email,
   &--company,
   &--title {
+    background: transparent;
     border-bottom: solid 0.06rem var(--border-clr-three);
+
+    outline-color: var(--primary-clr-one);
 
     padding: 0 0 1.06rem 1.25rem;
   }
 
   &--message {
+    background: transparent;
     border-bottom: solid 0.06rem var(--border-clr-three);
+
+    outline-color: var(--primary-clr-one);
 
     padding: 0 0 4rem 1.25rem;
   }
@@ -44,6 +50,8 @@
     transform: translateY(-0.075rem);
 
     margin: 0;
+
+    cursor: pointer;
 
     &::before {
       content: "";
@@ -94,7 +102,7 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 62.5rem) {
   .contact-section {
     &__form {
       display: grid;

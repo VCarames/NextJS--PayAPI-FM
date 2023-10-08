@@ -1,5 +1,5 @@
 .features-section {
-  margin-top: 81px;
+  margin-top: 5.06rem;
   padding: 0 1.44rem 0 1.5rem;
 
   &__content {
@@ -11,14 +11,14 @@
   &__list {
     display: grid;
     justify-items: center;
-    gap: 35px;
+    gap: 2.19rem;
 
     &-item {
-      max-width: 320px;
+      max-width: 20rem;
 
       display: grid;
       justify-items: center;
-      gap: 34px;
+      gap: 2.13rem;
 
       text-align: center;
     }
@@ -26,7 +26,7 @@
     &-container {
       display: grid;
       justify-items: center;
-      gap: 15px;
+      gap: 0.94rem;
     }
 
     &-heading {
@@ -41,7 +41,7 @@
 
 @media (min-width: 43.75rem) {
   .features-section {
-    margin-top: 100px;
+    margin-top: 6.25rem;
     padding: 0 1.44rem 0 1.5rem;
 
     &__list {
@@ -52,11 +52,11 @@
       gap: 0;
 
       &-item {
-        max-width: 210px;
+        max-width: 13.13rem;
       }
 
       &-icon {
-        max-width: 88px;
+        max-width: 5.5rem;
         height: auto;
       }
     }
@@ -73,14 +73,14 @@
       justify-items: center;
 
       grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
+      gap: 1.88rem;
 
       &-item {
-        max-width: 340px;
+        max-width: 21.25rem;
       }
 
       &-icon {
-        max-width: 107px;
+        max-width: 6.69rem;
       }
     }
   }

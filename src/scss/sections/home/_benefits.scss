@@ -38,13 +38,13 @@
   &__illustration--one {
     max-width: 27.75rem;
 
-    box-shadow: 1.56rem 1.56rem 5rem 0 var(--boxshadow-clr-two);
+    box-shadow: 1.56rem 1.56rem 5rem 0 hsla(207, 33%, 32%, 0.3);
   }
 
   &__illustration--two {
     max-width: 27.75rem;
 
-    filter: drop-shadow(1.56rem 1.56rem 5rem 0 var(--boxshadow-clr-two));
+    filter: drop-shadow(1.56rem 1.56rem 5rem hsla(207, 33%, 32%, 0.3));
   }
 
   &__container {
@@ -74,7 +74,7 @@
 
 @media (min-width: 43.75rem) {
   .benefits-section {
-    margin-top: 100px;
+    margin-top: 6.25rem;
 
     &__content {
       gap: 6.19rem;

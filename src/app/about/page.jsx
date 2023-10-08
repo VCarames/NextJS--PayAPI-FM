@@ -28,13 +28,13 @@ function About() {
           <picture className="values-section__picture">
             <source
               srcSet="/assets/images/image-team-members-desktop.jpg"
-              media="(min-width: 1000px)"
+              media="(min-width: 62.5rem)"
               width="1440"
               height="500"
             />
             <source
               srcSet="/assets/images/image-team-members-tablet.jpg"
-              media="(min-width: 700px)"
+              media="(min-width: 43.75rem)"
               width="769"
               height="267"
             />

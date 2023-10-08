@@ -1,5 +1,5 @@
 .values-section {
-  margin-top: 42px;
+  margin-top: 2.63rem;
 
   &__content {
     // max-width: var(--mw-1110);
@@ -15,7 +15,7 @@
 
     color: var(--secondary-clr-one);
     text-align: center;
-    margin: 0 24px 0 24px;
+    margin: 0 1.5rem 0 1.5rem;
   }
 
   &__container {
@@ -26,32 +26,32 @@
 
   &__value {
     display: grid;
-    gap: 16px;
+    gap: 1rem;
 
     text-align: center;
 
-    padding: 0 24px;
+    padding: 0 1.5rem;
 
-    margin-top: 48px;
+    margin-top: 3rem;
 
     &-heading {
       text-align: center;
-      color: hsla(207, 33%, 32%, 1);
+      color: var(--secondary-clr-one);
     }
 
     &-text {
-      color: hsla(207, 16%, 50%, 1);
+      color: var(--secondary-clr-four);
     }
   }
 
   &__picture {
-    margin-top: 76px;
+    margin-top: 4.75rem;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 43.75rem) {
   .values-section {
-    margin-top: 61px;
+    margin-top: 3.81rem;
 
     &__content {
       display: grid;
@@ -66,39 +66,39 @@
     &__value {
       display: grid;
       grid-template-columns: 1fr 2fr;
-      gap: 5px;
+      gap: 0.31rem;
 
       text-align: center;
 
-      padding: 0 40px 0 39px;
+      padding: 0 2.5rem 0 2.44rem;
 
-      margin-top: 64px;
+      margin-top: 4rem;
 
       &-heading {
         text-align: start;
-        color: hsla(207, 33%, 32%, 1);
+        color: var(--secondary-clr-one);
 
-        font-size: 32px;
+        font-size: 2rem;
 
-        line-height: 40px; /* 125% */
-        letter-spacing: -0.246px;
+        line-height: 1.25;
+        letter-spacing: -0.02rem;
       }
 
       &-text {
         text-align: start;
-        color: hsla(207, 16%, 50%, 1);
+        color: var(--secondary-clr-four);
       }
     }
 
     &__picture {
-      margin-top: 92px;
+      margin-top: 5.75rem;
     }
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 62.5rem) {
   .values-section {
-    margin-top: 67px;
+    margin-top: 4.19rem;
 
     &__content {
       display: grid;
@@ -108,41 +108,41 @@
       max-width: 26ch;
       text-align: start;
 
-      padding: 0 40px;
+      padding: 0 2.5rem;
       margin: initial;
     }
 
     &__value {
       display: grid;
       grid-template-columns: 1fr 2fr;
-      gap: 5px;
+      gap: 0.31rem;
 
       text-align: center;
 
-      padding: 0 40px 0 39px;
+      padding: 0 2.5rem 0 2.44rem;
 
-      margin-top: 70px;
+      margin-top: 4.38rem;
 
       &-heading {
         text-align: start;
-        color: hsla(207, 33%, 32%, 1);
+        color: var(--secondary-clr-one);
 
-        font-size: 32px;
+        font-size: 2rem;
 
-        line-height: 40px; /* 125% */
-        letter-spacing: -0.246px;
+        line-height: 1.25;
+        letter-spacing: -0.02rem;
       }
 
       &-text {
         max-width: 66ch;
 
         text-align: start;
-        color: hsla(207, 16%, 50%, 1);
+        color: var(--secondary-clr-four);
       }
     }
 
     &__picture {
-      margin-top: 87px;
+      margin-top: 5.44rem;
     }
   }
 }

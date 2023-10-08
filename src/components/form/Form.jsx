@@ -30,6 +30,7 @@ function Form() {
         id="company"
         className="contact-section__form--company"
         placeholder="Company Name"
+        pattern="[a-zA-Z]*"
       />
       <label className="visually-hidden" htmlFor="company">
         Company Name
@@ -41,6 +42,7 @@ function Form() {
         id="title"
         className="contact-section__form--title"
         placeholder="Title"
+        pattern="[a-zA-Z]*"
       />
       <label className="visually-hidden" htmlFor="title">
         Title

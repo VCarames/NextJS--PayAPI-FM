@@ -14,6 +14,8 @@
   &__illustration {
     max-width: 7.94rem;
     height: auto;
+
+    filter: drop-shadow(1.56rem 1.56rem 5rem hsla(207, 33%, 32%, 0.3));
   }
 
   &__container {
@@ -22,6 +24,8 @@
 
   &__heading {
     max-width: 22ch;
+
+    color: var(--secondary-clr-one);
 
     margin-bottom: 1.5rem;
   }
@@ -65,9 +69,7 @@
       grid-area: illustration;
       max-width: 31.25rem;
 
-      transform: translateX(39px);
-
-      filter: drop-shadow(1.56rem 1.56rem 5rem var(--boxshadow-clr-two));
+      transform: translateX(2.44rem);
     }
 
     &__container {

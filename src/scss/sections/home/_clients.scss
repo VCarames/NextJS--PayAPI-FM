@@ -42,12 +42,12 @@
 
 @media (min-width: 43.75rem) {
   .clients-section {
-    padding: 5.94rem 2.5rem 5.5rem 2.5rem;
+    padding: 5.5rem 2.5rem 5.5rem 2.5rem;
     margin-top: 5.88rem;
 
     &__content {
       align-items: center;
-      gap: 4.25rem;
+      gap: 3.75rem;
     }
 
     &__heading {
@@ -73,7 +73,7 @@
 @media (min-width: 62.5rem) {
   .clients-section {
     padding: 6.5rem 2.5rem 6.25rem 2.5rem;
-    margin-top: 74px;
+    margin-top: 4.63rem;
 
     &__content {
       max-width: var(--mw-1110);

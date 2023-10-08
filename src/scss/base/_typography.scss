@@ -80,7 +80,7 @@
   font-weight: var(--fw-700);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 43.75rem) {
   .primary__link {
     font-size: var(--fs-15);
   }
@@ -106,7 +106,7 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 62.5rem) {
   .primary__heading {
     font-size: var(--fs-72);
     line-height: 1;

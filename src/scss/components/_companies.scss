@@ -8,7 +8,8 @@
   .companies__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 3.81rem;
+    column-gap: 3.06rem;
+    row-gap: 2.75rem;
     justify-items: center;
   }
 }
