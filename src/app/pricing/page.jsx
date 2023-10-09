@@ -5,7 +5,7 @@ function Pricing() {
   return (
     <>
       <Plans />
-      <CTASection />
+      <CTASection sectionClassName="cta-section cta-section--pricing" />
     </>
   );
 }

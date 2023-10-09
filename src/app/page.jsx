@@ -11,7 +11,7 @@ function Home() {
       <Clients />
       <Benefits />
       <Features />
-      <CTASection />
+      <CTASection sectionClassName="cta-section cta-section--home" />
     </>
   );
 }

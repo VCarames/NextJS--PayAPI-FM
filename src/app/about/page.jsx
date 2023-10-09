@@ -64,7 +64,7 @@ function About() {
           </div>
         </div>
       </section>
-      <CTASection />
+      <CTASection sectionClassName="cta-section cta-section--about" />
     </>
   );
 }

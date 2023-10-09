@@ -497,7 +497,6 @@ body {
     margin: inherit;
   }
   .cta-form__text {
-    margin-left: 1.75rem;
     transform: translateX(1.69rem);
   }
 }
@@ -543,8 +542,17 @@ body {
   }
 }
 @media (min-width: 62.5rem) {
-  .cta-section {
+  .cta-section--home {
+    margin-top: 6rem;
+  }
+  .cta-section--pricing {
     margin-top: 5.31rem;
+  }
+  .cta-section--about {
+    margin-top: 5.63rem;
+  }
+  .cta-section--contact {
+    margin-top: 5.69rem;
   }
   .cta-section__content {
     text-align: start;
@@ -770,7 +778,7 @@ body {
 }
 @media (min-width: 62.5rem) {
   .clients-section {
-    padding: 6.5rem 2.5rem 6.25rem 2.5rem;
+    padding: 6.5rem 2.5rem 6.06rem 2.5rem;
     margin-top: 4.63rem;
   }
   .clients-section__content {
@@ -880,7 +888,7 @@ body {
 }
 @media (min-width: 62.5rem) {
   .benefits-section {
-    margin-top: 9.19rem;
+    margin-top: 9.38rem;
   }
   .benefits-section__content {
     gap: 9.44rem;
@@ -993,6 +1001,10 @@ body {
   }
   .features-section__list-icon {
     max-width: 6.69rem;
+  }
+  .features-section__list-text {
+    line-height: 1.66;
+    letter-spacing: -0.01rem;
   }
 }
 .plans-section {

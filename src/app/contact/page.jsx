@@ -16,8 +16,8 @@ function Contact() {
             <Join />
           </section>
         </div>
-        <CTASection />
       </section>
+      <CTASection sectionClassName="cta-section cta-section--contact" />
     </>
   );
 }

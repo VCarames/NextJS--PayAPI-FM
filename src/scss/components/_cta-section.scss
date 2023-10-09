@@ -33,7 +33,21 @@
 
 @media (min-width: 62.5rem) {
   .cta-section {
-    margin-top: 5.31rem;
+    &--home {
+      margin-top: 6rem;
+    }
+
+    &--pricing {
+      margin-top: 5.31rem;
+    }
+
+    &--about {
+      margin-top: 5.63rem;
+    }
+
+    &--contact {
+      margin-top: 5.69rem;
+    }
 
     &__content {
       text-align: start;
