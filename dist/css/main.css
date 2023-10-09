@@ -89,6 +89,7 @@ button {
   --mw-700: 43.75rem;
   --mw-1000: 62.5rem;
   --mw-1110: 69.38rem;
+  --fs-11: 0.69rem;
   --fs-15: 0.94rem;
   --fs-16: 1rem;
   --fs-18: 1.13rem;
@@ -197,6 +198,14 @@ button {
   font-family: var(--ff-secondary);
   font-size: var(--fs-15);
   font-weight: var(--fw-700);
+}
+
+.error {
+  color: #f00;
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-11);
+  font-weight: var(--fw-400);
+  letter-spacing: -0.01rem;
 }
 
 @media (min-width: 43.75rem) {

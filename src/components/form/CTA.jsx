@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 
 function CTA({
   formClassName,
@@ -7,8 +9,32 @@ function CTA({
   buttonClassName,
   spanClassName,
 }) {
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
+
+  const validateEmail = () => {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!email) {
+      setError("Email cannot be blank.");
+    } else if (!emailRegex.test(email)) {
+      setError("Invalid email address.");
+    } else {
+      setError("");
+    }
+  };
+
+  const handleInputClick = () => {
+    setError("");
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    validateEmail();
+    // Add further logic here if needed, e.g., submitting the form data.
+  };
+
   return (
-    <form className={formClassName} noValidate>
+    <form className={formClassName} noValidate onSubmit={handleSubmit}>
       <input
         className={inputClassName}
         id="email"
@@ -16,8 +42,10 @@ function CTA({
         name="email"
         aria-describedby="email__error"
         placeholder="Enter email address"
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
         autoComplete="email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        onClick={handleInputClick}
       />
       <label className={labelClassName} htmlFor="email">
         Enter email address
@@ -27,9 +55,11 @@ function CTA({
       </button>
       <span
         id="email__error"
-        className={spanClassName}
+        className={`error ${spanClassName}`}
         aria-live="assertive"
-      ></span>
+      >
+        {error && <p>{error}</p>}
+      </span>
     </form>
   );
 }
