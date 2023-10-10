@@ -192,6 +192,15 @@ button {
   line-height: 1.75;
 }
 
+input {
+  color: var(--secondary-clr-one);
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-15);
+  font-weight: var(--fw-400);
+  line-height: 1.66;
+  letter-spacing: -0.01rem;
+}
+
 ::placeholder {
   color: var(--secondary-clr-one);
   opacity: 0.5;
@@ -508,6 +517,9 @@ body {
   .cta-form__text {
     transform: translateX(1.69rem);
   }
+  .cta-form__error {
+    margin-left: 20px;
+  }
 }
 .companies__list {
   display: grid;
@@ -561,7 +573,7 @@ body {
     margin-top: 5.63rem;
   }
   .cta-section--contact {
-    margin-top: 5.69rem;
+    margin-top: 5rem;
   }
   .cta-section__content {
     text-align: start;
@@ -1472,10 +1484,16 @@ body {
   }
 }
 @media (min-width: 62.5rem) {
+  .contact-section__container {
+    margin: 4rem 0 0.88rem 0;
+  }
   .contact-section__form {
     display: grid;
-    gap: 1.5rem;
-    margin: 4rem 0 0 0;
+    gap: 0.75rem;
+    margin: 0;
+  }
+  .contact-section__form-container {
+    margin-bottom: 0.63rem;
   }
 }
 .join__content {

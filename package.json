@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "latest",
+    "next": "^13.5.4",
     "prettier": "^3.0.3",
     "react": "latest",
     "react-dom": "latest",
