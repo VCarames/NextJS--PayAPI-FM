@@ -9,7 +9,7 @@
     border-radius: 1.5rem;
 
     background: var(--primary-clr-two);
-    outline-color: var(--primary-clr-one);
+    // outline-color: var(--primary-clr-one);
     box-shadow: 0.63rem 0.63rem 1.56rem -0.63rem var(--boxshadow-clr-one);
   }
 
@@ -59,8 +59,8 @@
 
     &__button {
       position: absolute;
-      right: 0%;
-      top: -1%;
+       right: 0%;
+      top: 1%;
 
       padding: 0.81rem 1.44rem 0.69rem 1.63rem;
     }
@@ -75,12 +75,14 @@
   .cta-form {
     margin: inherit;
 
+  
+
     &__text {
       transform: translateX(1.69rem);
     }
 
     &__error {
-      margin-left: 20px;
+      margin-left: 1.25rem;
     }
   }
 }

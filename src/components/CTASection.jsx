@@ -13,7 +13,7 @@ function CTASection({ sectionClassName }) {
           formClassName="cta-form cta-form--section"
           inputClassName="cta-form__email"
           labelClassName="cta-form__email-label visually-hidden"
-          buttonClassName="cta-form__button button button--primary"
+          buttonClassName="cta-form__button  button button--primary"
           spanClassName="cta-form__error"
         />
       </div>

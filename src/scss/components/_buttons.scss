@@ -24,8 +24,10 @@
     color: var(--primary-clr-two);
     background: var(--primary-clr-one);
 
-    &:hover {
-      background: #da6d97;
+    @media (hover: hover) {
+      &:is(:hover, :focus, :focus-visible) {
+        background: var(--secondary-clr-three);
+      }
     }
   }
 
@@ -34,9 +36,11 @@
     background: none;
     border: solid 0.06rem var(--secondary-clr-one);
 
-    &:hover {
-      color: var(--primary-clr-two);
-      background: var(--secondary-clr-one);
+    @media (hover: hover) {
+      &:is(:hover, :focus, :focus-visible) {
+        color: var(--primary-clr-two);
+        background: var(--secondary-clr-one);
+      }
     }
   }
 
@@ -44,9 +48,11 @@
     color: var(--primary-clr-two);
     border: solid 0.06rem var(--primary-clr-two);
 
-    &:hover {
-      color: var(--secondary-clr-on);
-      background: var(--primary-clr-two);
+    @media (hover: hover) {
+      &:is(:hover, :focus, :focus-visible) {
+        color: var(--secondary-clr-on);
+        background: var(--primary-clr-two);
+      }
     }
   }
 }

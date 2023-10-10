@@ -78,13 +78,14 @@
     color: var(--primary-clr-two);
     opacity: 0.7;
     text-align: center;
-  }
 
-  @media (hover: hover) {
-    &-link:is(:hover, :focus, :focus-visible) {
-      color: var(--primary-clr-one);
-      opacity: 1;
-      transition: var(--transition);
+    @media (hover: hover) {
+      &:is(:hover, :focus, :focus-visible) {
+        color: var(--primary-clr-one);
+        opacity: 1;
+
+        transition: var(--transition);
+      }
     }
   }
 

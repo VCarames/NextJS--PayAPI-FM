@@ -76,11 +76,14 @@ function Form() {
         pattern="[a-zA-Z]*"
         value={formData.name}
         onChange={handleInputChange}
+        aria-describedby="error--name"
       />
       <label className="visually-hidden" htmlFor="name">
         Name
       </label>
-      <span className="error">{errors.name}</span>
+      <span id="error--name" className="error">
+        {errors.name}
+      </span>
 
       <input
         type="email"
@@ -90,11 +93,14 @@ function Form() {
         placeholder="Email Address"
         value={formData.email}
         onChange={handleInputChange}
+        aria-describedby="error--email"
       />
       <label className="visually-hidden" htmlFor="email">
         Email
       </label>
-      <span className="error">{errors.email}</span>
+      <span id="error--email" className="error">
+        {errors.email}
+      </span>
 
       <input
         type="text"
@@ -103,11 +109,14 @@ function Form() {
         className="contact-section__form--company"
         placeholder="Company Name"
         pattern="[a-zA-Z]*"
+        aria-describedby="error--company-name"
       />
       <label className="visually-hidden" htmlFor="company">
         Company Name
       </label>
-      <span className="error">{errors.companyName}</span>
+      <span id="error--company-name" className="error">
+        {errors.companyName}
+      </span>
 
       <input
         type="text"
@@ -116,11 +125,14 @@ function Form() {
         className="contact-section__form--title"
         placeholder="Title"
         pattern="[a-zA-Z]*"
+        aria-describedby="error--title"
       />
       <label className="visually-hidden" htmlFor="title">
         Title
       </label>
-      <span className="error">{errors.title}</span>
+      <span id="error--title" className="error">
+        {errors.title}
+      </span>
 
       <input
         type="text"
@@ -128,11 +140,14 @@ function Form() {
         id="message"
         className="contact-section__form--message"
         placeholder="Message"
+        aria-describedby="error--message"
       />
       <label className="visually-hidden" htmlFor="message">
         Message
       </label>
-      <span className="error">{errors.message}</span>
+      <span id="error--message" className="error">
+        {errors.message}
+      </span>
 
       <div className="contact-section__form-container">
         <input

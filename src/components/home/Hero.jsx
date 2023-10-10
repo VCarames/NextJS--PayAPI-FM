@@ -18,7 +18,7 @@ function Hero() {
           </h1>
           <div>
             <CTA
-              formClassName="cta-form"
+              formClassName="cta-form cta--hero"
               inputClassName="cta-form__email"
               labelClassName="cta-form__email-label visually-hidden"
               buttonClassName="cta-form__button button button--primary"

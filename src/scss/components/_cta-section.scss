@@ -2,6 +2,14 @@
   padding: 0 1.25rem;
   margin-top: 2.56rem;
 
+  &--about {
+    margin-top: 1.44rem;
+  }
+
+  &--contact {
+    margin-top: 3.75rem;
+  }
+
   &__content {
     max-width: var(--mw-1110);
     margin: 0 auto;
@@ -23,16 +31,27 @@
 
 @media (min-width: 43.75rem) {
   .cta-section {
+    padding: 0 2.44rem;
     margin-top: 5.06rem;
 
     &__content {
       gap: 2.44rem;
+    }
+
+    &--about {
+      margin-top: 4.63rem;
+    }
+
+    &--contact {
+      margin-top: 6.19rem;
     }
   }
 }
 
 @media (min-width: 62.5rem) {
   .cta-section {
+    padding: 0 2.44rem;
+
     &--home {
       margin-top: 6rem;
     }

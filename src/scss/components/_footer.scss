@@ -1,6 +1,6 @@
 .footer {
   padding: 2.56rem 1.44rem 3.38rem 1.5rem;
-  margin-top: 4rem;
+  margin-top: 3.81rem;
 
   background: var(--secondary-clr-two);
 
@@ -24,6 +24,14 @@
     &-link {
       color: var(--primary-clr-two);
       opacity: 0.7;
+
+      @media (hover: hover) {
+        &:is(:hover, :focus, :focus-visible) {
+          color: var(--primary-clr-one);
+
+          transition: var(--transition);
+        }
+      }
     }
   }
 
@@ -34,15 +42,14 @@
 
     &-icon {
       fill: var(--primary-clr-two);
+
+      @media (hover: hover) {
+        &:is(:hover, :focus, :focus-visible) {
+          fill: var(--primary-clr-one);
+          transition: var(--transition);
+        }
+      }
     }
-  }
-}
-
-@media (hover: hover) {
-  .footer__nav-list-link:is(:hover, :focus, :focus-visible) {
-    color: var(--primary-clr-one);
-
-    transition: var(--transition);
   }
 }
 
