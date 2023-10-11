@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${dm_serif_display.variable} ${public_sans.variable}`}
     >
-      <body>
+      <body className="body body--pricing">
         <Header />
         <main>{children}</main>
         <Footer />
