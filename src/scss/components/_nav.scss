@@ -55,6 +55,10 @@
   overflow: auto;
   padding: 5.81rem 1.5rem 0 1.5rem;
   background: var(--secondary-clr-two);
+  background-image: url(/assets/illustrations/bg-pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-size: 43.75rem;
+  background-position: right 42% top -29.31rem;
 
   box-shadow: 0.63rem 0.63rem 1.56rem 0.63rem var(--boxshadow-clr-one);
 
@@ -137,6 +141,7 @@
     padding: 0;
 
     background: transparent;
+    background-image: none;
     box-shadow: none;
 
     &-list {

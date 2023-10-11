@@ -3,6 +3,9 @@
   margin-top: 3.81rem;
 
   background: var(--secondary-clr-two);
+  background-image: url(/assets/illustrations/bg-pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-position: right 50% bottom -37.81rem;
 
   &__content {
     max-width: var(--mw-1110);
@@ -58,6 +61,9 @@
     padding: 2rem 2.5rem 1.94rem 2.44rem;
     margin-top: 2.25rem;
 
+    background-size: 91%;
+    background-position: right -447% bottom -30.56rem;
+
     &__content {
       max-width: var(--mw-1110);
       margin: 0 auto;
@@ -95,6 +101,8 @@
   .footer {
     padding: 2rem 2.5rem 1.88rem 2.44rem;
     margin-top: 5.88rem;
+
+    background-position: right -682% bottom -59.06rem;
 
     &__content {
       display: grid;

@@ -1,0 +1,47 @@
+.body {
+  background: var(--primary-clr-three);
+  background-image: url(/assets/illustrations/bg-pattern-circle.svg);
+  background-repeat: no-repeat;
+
+  &--home {
+    background-size: 49.13rem;
+    background-position: right 50% top -34.75rem;
+  }
+
+  &--pricing,
+  &--about,
+  &--contact {
+    background-size: 48.75rem;
+    background-position: right 121% top -28.88rem;
+  }
+}
+
+@media (min-width: 43.75rem) {
+  .body {
+    &--home {
+      background-size: 59.69rem;
+      background-position: right 50% top -41.88rem;
+    }
+
+    &--pricing,
+    &--about,
+    &--contact {
+      background-position: right 4311% top -29rem;
+    }
+  }
+}
+
+@media (min-width: 62.5rem) {
+  .body {
+    &--home {
+      background-size: 48.75rem;
+      background-position: right -21% top -10.75rem;
+    }
+
+    &--pricing,
+    &--about,
+    &--contact {
+      background-position: right -21% top -33rem;
+    }
+  }
+}

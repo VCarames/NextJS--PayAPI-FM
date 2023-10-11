@@ -255,10 +255,38 @@ input {
     letter-spacing: -0.02rem;
   }
 }
-body {
+.body {
   background: var(--primary-clr-three);
+  background-image: url(/assets/illustrations/bg-pattern-circle.svg);
+  background-repeat: no-repeat;
+}
+.body--home {
+  background-size: 49.13rem;
+  background-position: right 50% top -34.75rem;
+}
+.body--pricing, .body--about, .body--contact {
+  background-size: 48.75rem;
+  background-position: right 121% top -28.88rem;
 }
 
+@media (min-width: 43.75rem) {
+  .body--home {
+    background-size: 59.69rem;
+    background-position: right 50% top -41.88rem;
+  }
+  .body--pricing, .body--about, .body--contact {
+    background-position: right 4311% top -29rem;
+  }
+}
+@media (min-width: 62.5rem) {
+  .body--home {
+    background-size: 48.75rem;
+    background-position: right -21% top -10.75rem;
+  }
+  .body--pricing, .body--about, .body--contact {
+    background-position: right -21% top -33rem;
+  }
+}
 .button {
   min-width: 10ch;
   min-height: 2.75rem;
@@ -380,6 +408,10 @@ body {
   overflow: auto;
   padding: 5.81rem 1.5rem 0 1.5rem;
   background: var(--secondary-clr-two);
+  background-image: url(/assets/illustrations/bg-pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-size: 43.75rem;
+  background-position: right 42% top -29.31rem;
   box-shadow: 0.63rem 0.63rem 1.56rem 0.63rem var(--boxshadow-clr-one);
   transition: transform 0.6s cubic-bezier(0, 0, 0, 1), visibility 0.3s linear;
 }
@@ -443,6 +475,7 @@ body {
     max-width: 100%;
     padding: 0;
     background: transparent;
+    background-image: none;
     box-shadow: none;
   }
   .nav__menu-list {
@@ -620,6 +653,9 @@ body {
   padding: 2.56rem 1.44rem 3.38rem 1.5rem;
   margin-top: 3.81rem;
   background: var(--secondary-clr-two);
+  background-image: url(/assets/illustrations/bg-pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-position: right 50% bottom -37.81rem;
 }
 .footer__content {
   max-width: var(--mw-1110);
@@ -663,6 +699,8 @@ body {
   .footer {
     padding: 2rem 2.5rem 1.94rem 2.44rem;
     margin-top: 2.25rem;
+    background-size: 91%;
+    background-position: right -447% bottom -30.56rem;
   }
   .footer__content {
     max-width: var(--mw-1110);
@@ -693,6 +731,7 @@ body {
   .footer {
     padding: 2rem 2.5rem 1.88rem 2.44rem;
     margin-top: 5.88rem;
+    background-position: right -682% bottom -59.06rem;
   }
   .footer__content {
     display: grid;
@@ -771,6 +810,9 @@ body {
 }
 .clients-section {
   background: var(--secondary-clr-two);
+  background-image: url(/assets/illustrations/bg-pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-position: left 50% top -37.69rem;
   padding: 5.25rem 1.25rem 5rem 1.25rem;
   margin-top: 4.63rem;
 }
@@ -802,6 +844,7 @@ body {
 
 @media (min-width: 43.75rem) {
   .clients-section {
+    background-position: left 50% top -34.38rem;
     padding: 5.5rem 2.5rem 5.5rem 2.5rem;
     margin-top: 5.88rem;
   }
@@ -826,8 +869,14 @@ body {
 }
 @media (min-width: 62.5rem) {
   .clients-section {
+    background-position: left -36% top -22.38rem;
     padding: 6.5rem 2.5rem 6.06rem 2.5rem;
     margin-top: 4.63rem;
+  }
+  .clients-section::before {
+    top: -76%;
+    right: 62%;
+    transform: translateX(0%);
   }
   .clients-section__content {
     max-width: var(--mw-1110);
@@ -856,7 +905,8 @@ body {
 }
 .benefits-section {
   margin-top: 5rem;
-  padding: 0 1.38rem 0 1.44rem;
+  padding: 0 1.38rem 5.06rem 1.44rem;
+  z-index: 1;
 }
 .benefits-section__content {
   max-width: var(--mw-1110);
@@ -914,6 +964,7 @@ body {
 @media (min-width: 43.75rem) {
   .benefits-section {
     margin-top: 6.25rem;
+    padding-bottom: 6.25rem;
   }
   .benefits-section__content {
     gap: 6.19rem;
@@ -936,6 +987,10 @@ body {
 }
 @media (min-width: 62.5rem) {
   .benefits-section {
+    background-image: url(/assets/illustrations/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: right -59% bottom 0.38rem;
+    padding-bottom: 9rem;
     margin-top: 9.38rem;
   }
   .benefits-section__content {
@@ -983,7 +1038,6 @@ body {
   }
 }
 .features-section {
-  margin-top: 5.06rem;
   padding: 0 1.44rem 0 1.5rem;
 }
 .features-section__content {
@@ -1016,7 +1070,6 @@ body {
 
 @media (min-width: 43.75rem) {
   .features-section {
-    margin-top: 6.25rem;
     padding: 0 1.44rem 0 1.5rem;
   }
   .features-section__list {
@@ -1035,7 +1088,6 @@ body {
 }
 @media (min-width: 62.5rem) {
   .features-section {
-    margin-top: 9rem;
     padding: 0 1.44rem 0 1.5rem;
   }
   .features-section__list {
