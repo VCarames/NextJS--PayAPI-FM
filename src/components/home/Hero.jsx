@@ -16,13 +16,13 @@ function Hero() {
           <h1 className="hero-section__heading primary__heading">
             Start building with our APIs for absolutely free.
           </h1>
-          <div>
+          <div className="hero-section__container--hero">
             <CTA
               formClassName="cta-form cta--hero"
               inputClassName="cta-form__email"
               labelClassName="cta-form__email-label visually-hidden"
               buttonClassName="cta-form__button button button--primary"
-              spanClassName=""
+              spanClassName="cta-form__error--hero"
             />
             <p className="cta-form__text quaternary__text">
               Have any questions?

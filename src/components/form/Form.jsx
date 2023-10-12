@@ -81,7 +81,7 @@ function Form() {
       <label className="visually-hidden" htmlFor="name">
         Name
       </label>
-      <span id="error--name" className="error">
+      <span id="error--name" className="contact-section__form-error error">
         {errors.name}
       </span>
 
@@ -98,39 +98,46 @@ function Form() {
       <label className="visually-hidden" htmlFor="email">
         Email
       </label>
-      <span id="error--email" className="error">
+      <span id="error--email" className="contact-section__form-error error">
         {errors.email}
       </span>
 
       <input
         type="text"
-        name="company name"
+        name="companyName"
         id="company"
         className="contact-section__form--company"
         placeholder="Company Name"
+        value={formData.companyName}
+        onChange={handleInputChange}
         pattern="[a-zA-Z]*"
         aria-describedby="error--company-name"
       />
       <label className="visually-hidden" htmlFor="company">
         Company Name
       </label>
-      <span id="error--company-name" className="error">
+      <span
+        id="error--company-name"
+        className="contact-section__form-error error"
+      >
         {errors.companyName}
       </span>
 
       <input
         type="text"
-        name="message"
+        name="title"
         id="title"
         className="contact-section__form--title"
         placeholder="Title"
+        value={formData.title}
+        onChange={handleInputChange}
         pattern="[a-zA-Z]*"
         aria-describedby="error--title"
       />
       <label className="visually-hidden" htmlFor="title">
         Title
       </label>
-      <span id="error--title" className="error">
+      <span id="error--title" className="contact-section__form-error error">
         {errors.title}
       </span>
 
@@ -140,12 +147,15 @@ function Form() {
         id="message"
         className="contact-section__form--message"
         placeholder="Message"
+        value={formData.message}
+        onChange={handleInputChange}
+        pattern="[a-zA-Z]*"
         aria-describedby="error--message"
       />
       <label className="visually-hidden" htmlFor="message">
         Message
       </label>
-      <span id="error--message" className="error">
+      <span id="error--message" className="contact-section__form-error error">
         {errors.message}
       </span>
 

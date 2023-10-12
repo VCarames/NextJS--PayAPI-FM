@@ -49,13 +49,20 @@
 
       margin-bottom: 2.06rem;
     }
+
+    &__container--hero {
+      display: grid;
+      gap: 20px;
+    }
   }
 }
 
 @media (min-width: 62.5rem) {
   .hero-section {
     padding: 0 2.44rem;
-    margin-top: 3.63rem;
+    margin-top: 58px;
+
+    margin-top: 61px;
 
     &__content {
       display: grid;
@@ -84,6 +91,10 @@
       text-align: start;
 
       margin-bottom: 3.06rem;
+    }
+
+    &__container--hero {
+      gap: 4px;
     }
   }
 }

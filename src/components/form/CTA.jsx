@@ -30,7 +30,6 @@ function CTA({
   const handleSubmit = (e) => {
     e.preventDefault();
     validateEmail();
-    // Add further logic here if needed, e.g., submitting the form data.
   };
 
   return (
@@ -58,7 +57,7 @@ function CTA({
         className={`error ${spanClassName}`}
         aria-live="assertive"
       >
-        {error && <p>{error}</p>}
+        {error && error}
       </span>
     </form>
   );

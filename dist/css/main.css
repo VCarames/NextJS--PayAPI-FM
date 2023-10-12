@@ -518,20 +518,20 @@ input {
 .cta-form__text-link {
   font-weight: 700;
 }
-
 @media (hover: hover) {
   .cta-form__text-link:is(:hover, :focus, :focus-visible) {
     color: var(--primary-clr-one);
     transition: var(--transition);
   }
 }
+
 @media (min-width: 43.75rem) {
   .cta-form {
     position: relative;
     width: 100%;
     max-width: 27.75rem;
     display: flex;
-    gap: 1.25rem;
+    gap: 0;
     margin: 0 auto;
   }
   .cta-form__email {
@@ -544,6 +544,9 @@ input {
     top: 1%;
     padding: 0.81rem 1.44rem 0.69rem 1.63rem;
   }
+  .cta-form__error--hero, .cta-form__error--section {
+    margin-top: 10px;
+  }
   .cta-form__text {
     margin-top: -0.31rem;
   }
@@ -555,8 +558,11 @@ input {
   .cta-form__text {
     transform: translateX(1.69rem);
   }
-  .cta-form__error {
-    margin-left: 1.25rem;
+  .cta-form__error--hero, .cta-form__error--section {
+    margin-left: 1.69rem;
+  }
+  .cta-form__text {
+    margin-top: 0;
   }
 }
 .companies__list {
@@ -779,11 +785,16 @@ input {
     max-width: 21ch;
     margin-bottom: 2.06rem;
   }
+  .hero-section__container--hero {
+    display: grid;
+    gap: 20px;
+  }
 }
 @media (min-width: 62.5rem) {
   .hero-section {
     padding: 0 2.44rem;
-    margin-top: 3.63rem;
+    margin-top: 58px;
+    margin-top: 61px;
   }
   .hero-section__content {
     display: grid;
@@ -806,6 +817,9 @@ input {
     max-width: 16ch;
     text-align: start;
     margin-bottom: 3.06rem;
+  }
+  .hero-section__container--hero {
+    gap: 4px;
   }
 }
 .clients-section {
@@ -1513,6 +1527,9 @@ input {
   background: transparent;
   border-bottom: solid 0.06rem var(--border-clr-three);
   padding: 0 0 4rem 1.25rem;
+}
+.contact-section__form-error {
+  margin-left: 1.69rem;
 }
 .contact-section__form-container {
   display: flex;
