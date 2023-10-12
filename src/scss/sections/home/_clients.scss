@@ -2,10 +2,12 @@
   background: var(--secondary-clr-two);
   background-image: url(/assets/illustrations/bg-pattern-circle.svg);
   background-repeat: no-repeat;
-  background-position: left 50% top -37.69rem;
+  background-position: left -12.63rem top -37.69rem;
 
   padding: 5.25rem 1.25rem 5rem 1.25rem;
   margin-top: 4.63rem;
+
+  transition: var(--transition);
 
   &__content {
     max-width: var(--mw-1110);
@@ -45,10 +47,10 @@
 
 @media (min-width: 43.75rem) {
   .clients-section {
-    background-position: left 50% top -34.38rem;
+    background-position: left -0.25rem top -34.38rem;
 
     padding: 5.5rem 2.5rem 5.5rem 2.5rem;
-    margin-top: 5.88rem;
+    margin-top: 6rem;
 
     &__content {
       align-items: center;
@@ -77,10 +79,10 @@
 
 @media (min-width: 62.5rem) {
   .clients-section {
-    background-position: left -36% top -22.38rem;
+    background-position: left -14.88rem top -22.38rem;
 
     padding: 6.5rem 2.5rem 6.06rem 2.5rem;
-    margin-top: 4.63rem;
+    margin-top: 4.5rem;
 
     &::before {
       top: -76%;

@@ -1,12 +1,8 @@
 .benefits-section {
-  margin-top: 5rem;
-  // margin-bottom: 5.06rem;
   padding: 0 1.38rem 5.06rem 1.44rem;
+  margin-top: 5rem;
 
-  // position: relative;
-  // overflow: hidden;
-
-  z-index: 1;
+  transition: var(--transition);
 
   &__content {
     max-width: var(--mw-1110);
@@ -113,7 +109,7 @@
   .benefits-section {
     background-image: url(/assets/illustrations/bg-pattern-circle.svg);
     background-repeat: no-repeat;
-    background-position: right -59% bottom 0.38rem;
+    background-position: right -24.44rem bottom 0.5rem;
 
     padding-bottom: 9rem;
     margin-top: 9.38rem;

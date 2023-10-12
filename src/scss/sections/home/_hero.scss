@@ -52,7 +52,7 @@
 
     &__container--hero {
       display: grid;
-      gap: 20px;
+      gap: 0.44rem;
     }
   }
 }
@@ -60,9 +60,9 @@
 @media (min-width: 62.5rem) {
   .hero-section {
     padding: 0 2.44rem;
-    margin-top: 58px;
+    margin-top: 3.63rem;
 
-    margin-top: 61px;
+    margin-top: 3.81rem;
 
     &__content {
       display: grid;
@@ -94,7 +94,7 @@
     }
 
     &__container--hero {
-      gap: 4px;
+      gap: 0.25rem;
     }
   }
 }

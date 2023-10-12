@@ -7,6 +7,8 @@
   background-repeat: no-repeat;
   background-position: right 50% bottom -37.81rem;
 
+  transition: var(--transition);
+
   &__content {
     max-width: var(--mw-1110);
 
